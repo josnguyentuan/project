@@ -1,0 +1,132 @@
+{
+  "categories": [
+    {
+      "name": "Programing",
+      "id": 2
+    },
+    {
+      "name": "Economic",
+      "id": 3
+    },
+    {
+      "name": "Life Skill",
+      "id": 4
+    },
+    {
+      "name": "Children",
+      "id": 5
+    },
+    {
+      "name": "Literature",
+      "id": 6
+    },
+    {
+      "name": "Historic",
+      "id": 7
+    },
+    {
+      "name": "Maths",
+      "id": 8
+    },
+    {
+      "name": "English",
+      "id": 9
+    },
+    {
+      "name": "Product",
+      "id": 10
+    }
+  ],
+  "books": [
+    {
+      "id": 4,
+      "title": "Đừng Chạy Theo Người Khác",
+      "price": 52400,
+      "categoryId": 2,
+      "authorId": 2,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/27/6a/36/3baa4d13a402dfdb0c0abd191c4f97d7.jpg"
+    },
+    {
+      "title": "Mình Buồn Đủ Rồi, Mình Hạnh Phúc Thôi! - Kèm Chữ Ký + 3 Postcard",
+      "price": "53000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618204817734?alt=media&token=8e4a7ab4-8c00-4ffb-84a8-056b5ff35f91",
+      "categoryId": 6,
+      "authorId": 3,
+      "id": 5
+    },
+    {
+      "title": "Mình Buồn Đủ Rồi, Mình Hạnh Phúc Thôi! - Kèm Chữ Ký + 3 Postcard",
+      "price": "9000000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618205704210?alt=media&token=3adff9ce-4342-4508-8aec-f68c3cff9838",
+      "categoryId": 9,
+      "authorId": 7,
+      "id": 6
+    },
+    {
+      "id": 1,
+      "title": "999 Lá Thư Gửi Cho Chính Mình - Mong Bạn Trở Thành Phiên Bản Hạnh Phúc Nhất (Tập 2) - Tái Bản 2020",
+      "price": "5000000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618205963663?alt=media&token=b1030708-c6a2-4a77-962e-f33c4a41def9",
+      "categoryId": 6,
+      "authorId": 3
+    },
+    {
+      "title": "Hôm Nay Em Có Ổn Không?",
+      "price": "70.400",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618206352212?alt=media&token=164ae9ee-33a2-4517-a7bd-a4f9f4c40245",
+      "categoryId": 7,
+      "authorId": 6,
+      "id": 7
+    },
+    {
+      "title": "Tuổi Trẻ Nồng Nhiệt, Thời Gian Phai Mờ",
+      "price": "71.200",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618206435579?alt=media&token=d6fa4bd5-9b5b-42ab-a220-811673405073",
+      "categoryId": 6,
+      "authorId": 5,
+      "id": 8
+    },
+    {
+      "title": "Trả Cho Anh Tự Do, Trả Cho Em Bình Yên",
+      "price": "89000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618206534459?alt=media&token=1a6aa870-dd7b-4f1f-8cc3-3cda35c9deaa",
+      "categoryId": 4,
+      "authorId": 7,
+      "id": 9
+    },
+    {
+      "title": "365 Ngày Thong Dong - Tặng Kèm Sổ Tay",
+      "price": "127.500",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618290567485?alt=media&token=5fb0b611-2c70-4477-b70e-b54b05268478",
+      "categoryId": 4,
+      "authorId": 2,
+      "id": 10
+    }
+  ],
+  "authors": [
+    {
+      "id": 2,
+      "name": "Lê Đỗ Quỳnh Hương"
+    },
+    {
+      "name": "Nguyễn Anh Tuấn",
+      "id": 3
+    },
+    {
+      "name": "Lê Minh Quân",
+      "id": 4
+    },
+    {
+      "name": "Nguyễn Thế Kỷ",
+      "id": 5
+    },
+    {
+      "name": "Cambrige University",
+      "id": 6
+    },
+    {
+      "name": "Demo Author",
+      "id": 7
+    }
+  ]
+}

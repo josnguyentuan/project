@@ -1,0 +1,44 @@
+
+<div class="col-lg-12">
+    <div class="card bg-light">
+      <div class="card-header">
+        <h4>List Books</h4>
+        <a href="javascript:;" class="btn btn-success"
+        routerLink="/admin/books/add">Add New</a>
+      </div>
+      
+      <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <th>#</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Action</th>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let cate of category;index as i">
+                    <td>{{i+1}}</td>
+                    <td>
+                      <img [src]="cate.image" alt="" width="50px" height="50px" style="border-radius: 50%;">
+                    </td>
+                    <td>{{ cate.title | titlecase}}</td>
+                    <td>{{cate.price}}</td>                    
+                    <td>{{cate.category.name}}</td>
+
+                    <td>
+                        <a href="javascript:;" class="btn btn-info"
+                        routerLink="/admin/books/edit/{{cate.id}}">Sửa</a>
+                        &nbsp;
+                        <a href="javascript:;" (click)="deleteBooks(cate.id)" class="btn btn-danger" >Xóa</a>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>

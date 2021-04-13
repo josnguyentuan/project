@@ -1,0 +1,38 @@
+<div class="col-lg-12">
+  <div class="card">
+    <div class="card-header">
+      <h4>List Authors</h4>
+      <a href="javascript:;" class="btn btn-success" routerLink="/admin/authors/add">Add New</a>
+    </div>
+
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead class="text-center">
+          <th>#</th>
+          <th>Name </th>
+          <th>Amount Books</th>
+          <th>Action</th>
+        </thead>
+        <tbody class="text-center">
+          <tr *ngFor="let author of authors;index as i">
+            <td>{{i+1}}</td>
+            <td>{{ author.name | titlecase}}</td>
+            <td>
+              <span style="width: 15px; height: 15px; background-color
+              : #686de0; padding: 10px;border-radius: 20px;
+                      color:white;">
+                {{author.books?.length}}
+              </span>
+            </td>
+            <td>
+              <a href="javascript:;" class="btn btn-info" routerLink="/admin/authors/edit/{{author.id}}">Sửa</a>
+              &nbsp;
+              <a href="javascript:;" (click)="deleteAuthor(author.id)" class="btn btn-danger">Xóa</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
