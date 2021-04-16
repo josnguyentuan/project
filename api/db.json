@@ -2,39 +2,31 @@
   "categories": [
     {
       "name": "Programing",
-      "id": 2
+      "id": 1
     },
     {
       "name": "Economic",
-      "id": 3
+      "id": 2
     },
     {
       "name": "Life Skill",
-      "id": 4
+      "id": 3
     },
     {
       "name": "Children",
-      "id": 5
+      "id": 4
     },
     {
       "name": "Literature",
-      "id": 6
+      "id": 5
     },
     {
       "name": "Historic",
-      "id": 7
+      "id": 6
     },
     {
       "name": "Maths",
-      "id": 8
-    },
-    {
-      "name": "English",
-      "id": 9
-    },
-    {
-      "name": "Product",
-      "id": 10
+      "id": 7
     }
   ],
   "books": [
@@ -55,36 +47,36 @@
       "id": 5
     },
     {
-      "title": "Mình Buồn Đủ Rồi, Mình Hạnh Phúc Thôi! - Kèm Chữ Ký + 3 Postcard",
+      "id": 6,
+      "categoryId": 3,
+      "authorId": 5,
+      "title": "Computer Coding For Kids: A Unique Step-by-Step Visual Guide, From Binary Code To Building Games",
       "price": "9000000",
-      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618205704210?alt=media&token=3adff9ce-4342-4508-8aec-f68c3cff9838",
-      "categoryId": 9,
-      "authorId": 7,
-      "id": 6
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618415290083?alt=media&token=6fd727fd-17ff-4719-a192-1555d9f079b7"
     },
     {
       "id": 1,
+      "categoryId": 3,
+      "authorId": 3,
       "title": "999 Lá Thư Gửi Cho Chính Mình - Mong Bạn Trở Thành Phiên Bản Hạnh Phúc Nhất (Tập 2) - Tái Bản 2020",
       "price": "5000000",
-      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618205963663?alt=media&token=b1030708-c6a2-4a77-962e-f33c4a41def9",
-      "categoryId": 6,
-      "authorId": 3
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618415414953?alt=media&token=a31258d5-2750-46fb-8b42-b6f311a7c5f4"
     },
     {
+      "id": 7,
+      "categoryId": 5,
+      "authorId": 4,
       "title": "Hôm Nay Em Có Ổn Không?",
       "price": "70.400",
-      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618206352212?alt=media&token=164ae9ee-33a2-4517-a7bd-a4f9f4c40245",
-      "categoryId": 7,
-      "authorId": 6,
-      "id": 7
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618415323787?alt=media&token=0ac7f9cb-7883-43a3-93fd-3ebd11370503"
     },
     {
+      "id": 8,
+      "categoryId": 3,
+      "authorId": 4,
       "title": "Tuổi Trẻ Nồng Nhiệt, Thời Gian Phai Mờ",
       "price": "71.200",
-      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618206435579?alt=media&token=d6fa4bd5-9b5b-42ab-a220-811673405073",
-      "categoryId": 6,
-      "authorId": 5,
-      "id": 8
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618415345339?alt=media&token=20056650-f416-45ba-a93b-6b97e49c3290"
     },
     {
       "title": "Trả Cho Anh Tự Do, Trả Cho Em Bình Yên",
@@ -95,12 +87,60 @@
       "id": 9
     },
     {
-      "title": "365 Ngày Thong Dong - Tặng Kèm Sổ Tay",
-      "price": "127.500",
-      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618290567485?alt=media&token=5fb0b611-2c70-4477-b70e-b54b05268478",
-      "categoryId": 4,
+      "title": "Spy X Family - Tập 4 - Tặng Kèm Standee",
+      "price": "23.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618495467835?alt=media&token=5f3c956b-768c-4420-8ca1-c6d00b1bb1a5",
+      "categoryId": 3,
       "authorId": 2,
       "id": 10
+    },
+    {
+      "title": "Thay Đổi Cuộc Sống Với Nhân Số Học",
+      "price": "223.200",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618498318900?alt=media&token=2e48793d-8b59-4d07-a63f-1b5abd63989c",
+      "categoryId": 4,
+      "authorId": 2,
+      "id": 11
+    },
+    {
+      "title": "Giáo Dục Stem/ Steam: Từ Trải Nghiệm Thực Hành Đến Tư Duy Sáng Tạo",
+      "price": "72.250",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618498382212?alt=media&token=e2c3dfd8-9366-4608-bf3b-f855fca5263c",
+      "categoryId": 5,
+      "authorId": 2,
+      "id": 12
+    },
+    {
+      "title": "Evan Hansen Và Bức Thư Tuyệt Mệnh Dối Trá - Dear Evan Hansen",
+      "price": "96.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618498453298?alt=media&token=68b6f4b8-5e35-48a2-8d66-10087bad063c",
+      "categoryId": 3,
+      "authorId": 2,
+      "id": 13
+    },
+    {
+      "title": "Coding for Beginners: Using Python (Coding for Beginners)",
+      "price": "277.000",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618498540934?alt=media&token=41b8ee3c-9ea6-4232-b742-7920ca379cca",
+      "categoryId": 3,
+      "authorId": 2,
+      "id": 14
+    },
+    {
+      "id": 15,
+      "categoryId": 1,
+      "authorId": 4,
+      "title": "Computer Coding For Kids: A Unique Step-by-Step Visual Guide, From Binary Code To Building Games",
+      "price": "219.750",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618501993196?alt=media&token=4701f1c6-8388-4865-994d-fe1e11dff4d6"
+    },
+    {
+      "title": "123123123123123",
+      "price": "123123",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-angular-2d83f.appspot.com/o/Uploads%2F1618551376305?alt=media&token=0d31a129-94cd-4449-a3d0-ce513b831845",
+      "categoryId": 5,
+      "authorId": 1,
+      "id": 16
     }
   ],
   "authors": [

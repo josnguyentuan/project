@@ -22,6 +22,13 @@ import {
   
 } from "@angular/fire/storage";
 import { AngularFireModule } from '@angular/fire';
+import { ListBookStoreComponent } from './screens/client/list-book-store/list-book-store.component';
+import { DetailBooksComponent } from './screens/client/detail-books/detail-books.component';
+import { ShopComponent } from './screens/client/shop/shop.component';
+import { SortCateComponent } from './screens/client/sort-cate/sort-cate.component';
+import { SortAuthorComponent } from './screens/client/sort-author/sort-author.component';
+
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -39,6 +46,11 @@ import { AngularFireModule } from '@angular/fire';
     EditAuthorComponent,
     ListAuthorComponent,
     AddAuthorComponent,
+    ListBookStoreComponent,
+    DetailBooksComponent,
+    ShopComponent,
+    SortCateComponent,
+    SortAuthorComponent,
     
   ],
   imports: [
@@ -48,7 +60,9 @@ import { AngularFireModule } from '@angular/fire';
     FormsModule,
     ReactiveFormsModule,
     AngularFireStorageModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+        NgxPaginationModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

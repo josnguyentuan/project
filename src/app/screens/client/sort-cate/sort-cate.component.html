@@ -1,0 +1,77 @@
+<section class="shop spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <div class="shop__sidebar">
+            <div class="sidebar__categories">
+              <input type="text" class="form-control" [(ngModel)]="filterObject.keyword" (keyup)="search()"
+                placeholder="Tìm kiếm">
+            </div>
+            <div class="sidebar__categories">
+              <div class="section-title">
+                <h4>Categories</h4>
+              </div>
+              <div class="categories__accordion">
+                <div class="accordion" id="accordionExample">
+                  <div class="card-heading" *ngFor="let cate of cates">
+                    <a routerLink="/shop/cate/{{cate.id}}"  style="padding: 10px;" href="javascript:;">{{cate.name}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar__filter">
+              <div class="section-title">
+                <h4>Shop by price</h4>
+              </div>
+              <div class="filter-range-wrap">
+                <select class="form-control" (change)="search()" [(ngModel)]="filterObject.orderBy">
+                  <option *ngFor="let ord of orderCondition" [value]="ord.id">{{ord.name}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="sidebar__sizes">
+              <div class="section-title">
+                <h4>Shop by author</h4>
+              </div>
+              <div class="categories__accordion">
+                <div class="accordion" id="accordionExample">
+                  <div class="card-heading" *ngFor="let author of authors">
+                    <a routerLink="/shop/author/{{author.id}}" style="padding: 10px;" href="javascript:;">{{author.name}}</a>
+                </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+          <div class="row">
+            <div class="col-lg-4 col-md-6" *ngFor="let book of category">
+              <div class="product__item">
+                <div class="product__item__pic set-bg" style="background-image: url({{book.image}});">
+                  <ul class="product__hover">
+                    <li><a href="img/shop/shop-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                    <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                    <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                  </ul>
+                </div>
+                <div class="product__item__text">
+                  <h6><a routerLink ="/book/detail/{{book.id}}" href="javascript:;">{{book.title}}</a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="product__price">{{book.price}}</div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,3 +1,7 @@
+import { SortCateComponent } from './screens/client/sort-cate/sort-cate.component';
+import { ShopComponent } from './screens/client/shop/shop.component';
+import { DetailBooksComponent } from './screens/client/detail-books/detail-books.component';
+import { ListBookStoreComponent } from './screens/client/list-book-store/list-book-store.component';
 import { EditBookComponent } from './screens/admin/books/edit-book/edit-book.component';
 import { AddBookComponent } from './screens/admin/books/add-book/add-book.component';
 import { EditComponent } from './screens/admin/categories/edit/edit.component';
@@ -12,6 +16,7 @@ import { ListAuthorComponent } from './screens/admin/author/list-author/list-aut
 import { AddAuthorComponent } from './screens/admin/author/add-author/add-author.component';
 import { EditAuthorComponent } from './screens/admin/author/edit-author/edit-author.component';
 import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
+import { SortAuthorComponent } from './screens/client/sort-author/sort-author.component';
 
 const routes: Routes = [
   {
@@ -67,7 +72,33 @@ const routes: Routes = [
   },
   {
     path: "",
-    component: ClientLayoutComponent
+    component: ClientLayoutComponent,
+    children: [
+      {
+        path:"",
+        redirectTo: "homepage",
+        pathMatch: "full"
+      },{
+        path:"homepage",
+        component: ListBookStoreComponent
+      },
+      {
+        path: "book/detail/:id",
+        component: DetailBooksComponent
+      },
+      {
+        path: "shop",
+        component: ShopComponent
+      },
+      {
+        path: "shop/cate/:id",
+        component: SortCateComponent
+      },
+      {
+        path: "shop/author/:id",
+        component: SortAuthorComponent
+      }
+    ]
   }
 ];
 

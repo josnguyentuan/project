@@ -13,6 +13,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ListBookComponent implements OnInit {
   category: any;
   books!: Books[];
+  totalLength: any;
+  page: number = 1;
   constructor(private route: ActivatedRoute,
     private router: Router,
     private bookService: BookService,
@@ -25,11 +27,12 @@ export class ListBookComponent implements OnInit {
   getBooksData(){
     this.bookService.all().subscribe(data=>{
       this.category = data;
+      this.totalLength = data.length;
+
       console.log(data);
     })
   }
   deleteBooks(id: any){
-    // lấy thông tin danh mục kèm các quyển sách
     this.bookService.findById(id).subscribe(book => {
       this.bookService.delete(book.id).subscribe(data =>{
         this.books = this.books.filter(el=> el.id != book.id);

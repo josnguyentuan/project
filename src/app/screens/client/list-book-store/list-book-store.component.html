@@ -1,0 +1,89 @@
+<section class="categories">
+    <div class="container-fluid">
+        <div class="row" >
+                <div class="col-sm-6" *ngFor="let book of books">
+                    <div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
+                        <div class="categories__text">
+                            <h4>{{book.title.slice(0,30)}}</h4>
+                            <p>{{book.price}}</p>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                
+    </div>
+</div>
+</section>
+<section class="product spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="section-title">
+                    <h4>New product</h4>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+                <ul class="filter__controls">
+                    <li *ngFor="let cate of categories">{{cate.name}}</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row property__gallery">
+            <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let book of allBooks">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" style="background-image: url({{book.image}}) ;">
+                        <ul class="product__hover">
+                            <li><a href="{{book.image}}" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a routerLink ="/book/detail/{{book.id}}" href="javascript:;">{{book.title}}</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">{{book.price}}</div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<section class="banner set-bg" style="background-image: url(https://lh3.googleusercontent.com/proxy/oNCG2SKZrTrjyIVXdl7jFyC1SSfh3c2GYkiXA2NLJ3rsYYMiP8cP8a8oggQBKc3v1KEzRDBYFWN5P-X_uZUSWGoRCRWLVH4TZRcun6ayALqntg); background-size: cover;" >
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 m-auto">
+                <div class="banner__slider owl-carousel">
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -32,9 +32,9 @@
               <div class="row">
                 <div class="col-6">
                   <div class="form-group">
-                    <label>Select</label>
+                    <label>Category</label>
                     <select class="form-control" formControlName="categoryId">
-                      <option  *ngFor="let cate of cates"  [ngValue]="cate.id">{{cate.name}}</option>
+                      <option  *ngFor="let cate of cates; index as i"  [ngValue]="cate.id">{{cate.name}}</option>
                     </select>
                   </div>
                   
@@ -42,8 +42,8 @@
                 <div class="col-6">
                    <div class="form-group">
                     <div class="form-group">
-                      <label>Select</label>
-                      <select class="form-control" formControlName="categoryId">
+                      <label>Book</label>
+                      <select class="form-control" formControlName="authorId">
                         <option  *ngFor="let author of authors" [ngValue]="author.id">{{author.name}}</option> 
                       </select>
                     </div>                    
@@ -56,9 +56,15 @@
                     <div class="card-content">
                         <div class="card-body">      
                             <!-- Basic file uploader -->
-                            <input (change)="upload($event)"   formControlName="image" type="file" class="basic-filepond">
+                            <input (change)="upload($event)"   formControlName="image"
+                             type="file" class="basic-filepond">
                         </div>
                     </div>
+                </div>
+                <div class="row" *ngIf="editBook.value.image.length>0">
+                  <div class="col-6 offset-3" >
+                    <img [src]="editBook.value.image" class="img-thumbail" alt="">
+                  </div>
                 </div>
             </div>
               <button type="submit" class="btn btn-primary offset-5"> Save </button>

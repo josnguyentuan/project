@@ -19,12 +19,16 @@
 
             </thead>
             <tbody>
-                <tr *ngFor="let cate of category;index as i">
+                <tr *ngFor="let cate of category | 
+                paginate: { itemsPerPage: 5, 
+                  currentPage: page,
+                  totalItems: totalLength
+                 }; index as i">
                     <td>{{i+1}}</td>
                     <td>
                       <img [src]="cate.image" alt="" width="50px" height="50px" style="border-radius: 50%;">
                     </td>
-                    <td>{{ cate.title | titlecase}}</td>
+                    <td>{{ cate.title.slice(0,25) | titlecase}}...</td>
                     <td>{{cate.price}}</td>                    
                     <td>{{cate.category.name}}</td>
 
@@ -37,6 +41,14 @@
                     </td>
                 </tr>
             </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6">
+                  <pagination-controls class="text-center my-pagination" (pageChange)="page = $event" ></pagination-controls>
+
+                </td>
+              </tr>
+            </tfoot>
         </table>
 
       </div>

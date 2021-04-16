@@ -32,8 +32,7 @@ export class EditBookComponent implements OnInit {
 
   ) {
     this.editBook = this.editForm();
-    this.getCatesData();
-    this.getAuthorsData();
+    
 
    }
 
@@ -50,7 +49,11 @@ export class EditBookComponent implements OnInit {
        categoryId: data.categoryId,
        authorId: data.authorId,
      })
+     
    })
+  this.getCatesData();
+  this.getAuthorsData();
+
   }
   editForm(): FormGroup {
     return new FormGroup({
@@ -86,7 +89,7 @@ export class EditBookComponent implements OnInit {
   getCatesData(){
     this.cateService.all().subscribe(data => {
       this.cates = data;
-      this.editBook.controls['authorId'].setValue(data[0].id, {onlySelf: true})
+      //this.editBook.controls['authorId'].setValue(data[0].id, {onlySelf: true})
 
     })
   }

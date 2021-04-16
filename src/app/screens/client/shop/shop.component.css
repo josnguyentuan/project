@@ -1,0 +1,14 @@
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #5352ed;
+  }
+  .my-pagination /deep/ .ngx-pagination  .pagination-next {
+    background: #ffffff;
+    
+  }
+  
+  .my-pagination /deep/ .ngx-pagination  .pagination-next a{
+   color: black;
+  }
+  .my-pagination{
+      padding: 10px;
+  }

@@ -15,6 +15,11 @@ export class CategoryService {
     if(embed) requestUrl += '?_embed=books';
     return this.http.get<Category[]>(requestUrl);
   }
+  relatedBook(embed: boolean = true): Observable<Category[]>{
+    let requestUrl = this.API_URL;
+    if(embed) requestUrl += '?_embed=books';
+    return this.http.get<Category[]>(requestUrl);
+  }
 
   findById(id:any): Observable<Category>{
     let requestUrl = `${this.API_URL}/${id}?_embed=books`;

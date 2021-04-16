@@ -97,7 +97,7 @@ export class AddBookComponent implements OnInit {
       finalize(() => {
         this.downloadURL = fileRef.getDownloadURL();
         this.downloadURL.subscribe(url => {
-          this.bookForm.value.image = url;
+          this.bookForm.controls['image'].setValue(url);
           console.log(url);
         });
       })
